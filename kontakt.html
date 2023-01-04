@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnes Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="page-header">
+            <!-- Logo og et søgefelt -->
+            <div class="max">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <form action="" class="search-form">
+                    <input type="text" class="search-field">
+                    <button class="search-btn">
+                        <img src="img/search.png" alt="Søg">
+                    </button>
+                </form>
+            </div>
+        </header>
+        <!-- Menu -->
+        <nav class="menu">
+            <div class="max">
+                <button class="menu-btn" id="menu-btn">
+                    <img src="img/burger-icon.png" alt="Menu">
+                </button>
+                <ul id="menu-items">
+                    <li>
+                        <a href="index.html" class="menu-item">
+                            Forside
+                        </a>
+                    </li>
+                    <li>
+                        <a href="galleri.html" class="menu-item">
+                            Galleri
+                        </a>
+                    </li>
+                    <li class="selected">
+                        <a href="kontakt.html" class="menu-item">
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Slut på menu -->
+        <div class="max flex-desktop two-cols content">
+            <!-- Main -->
+            <main class="main">
+                <form action="besked.html" class="c-form">
+                    <h1>Kontakt mig</h1>
+                    <div>
+                        <input required type="text" name="your-name" id="" placeholder="Dit navn">
+                    </div>
+                    <div>
+                        <input required type="email" name="your-email" id="" placeholder="Din E-mail">
+                    </div>
+                    <div>
+                        <textarea name="your-message" placeholder="Skriv en besked"></textarea>
+                    </div>
+                    <div>
+                        <strong>Vælg din Favorit farve:</strong>
+                        <input type="color" name="your-color" id="" class="color-input" value="#ffffff">
+                    </div>
+                    <div>
+                        <button id="c-btn">Send</button>
+                    </div>
+                </form>
+            </main>
+            <aside class="sidebar">
+                <section>
+                    <h2>
+                        CSS FLEXBOX
+                    </h2>
+                    <p>
+                        Denne svedige side er bygget op med flexbox modellen. Så slipper man for at bruge floats/ clear,
+                        inline-block, display:table eller andre nederen hacks.
+                    </p>
+                </section>
+                <section>
+                    <h2>
+                        BROWSER SUPPORT:
+                    </h2>
+                    <p>
+                        Flexbox modellen er efterhånden rigtig godt understøttet i alle moderne browsere.
+                    </p>
+                </section>
+                <section>
+                    <h2>
+                        HVORDAN GØR MAN, ARNE?
+                    </h2>
+                    <p>
+                        Jo... For at få sine elementer til at tilpasse sig flexbox modellen, skal man altså lige gide
+                        give deres umidelbare forældre-element display-proprtien flex
+                    </p>
+                </section>
+            </aside>
+        </div>
+        <footer class="page-footer">
+            <div class="max flex-desktop">
+                <section class="footer-section">
+                    <h2>
+                        Arnes Portfolio
+                    </h2>
+                    <p>
+                        Paradisæblevej 13
+                    </p>
+                    <p>
+                        1313 Andeby
+                    </p>
+                </section>
+                <section class="footer-section">
+                    <h2>
+                        Arnes Portfolio
+                    </h2>
+                    <p>
+                        Paradisæblevej 13
+                    </p>
+                    <p>
+                        1313 Andeby
+                    </p>
+                </section>
+                <section class="footer-section">
+                    <h2>
+                        Arnes Portfolio
+                    </h2>
+                    <p>
+                        Paradisæblevej 13
+                    </p>
+                    <p>
+                        1313 Andeby
+                    </p>
+                </section>
+            </div>
+
+        </footer>
+    </div>
+    <script src="menu.js"></script>
+</body>
+
+</html>

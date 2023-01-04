@@ -1,0 +1,161 @@
+/* Stylesheet til Arnes Portfolio */
+
+/* Resets */
+
+*{
+    box-sizing: border-box;
+}
+
+body, html, figure{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+img, video, object, iframe {
+    max-width: 100%;
+}
+
+/* Header/ footer */
+.page-header, .page-footer{
+    background-color: #fff2d8;
+    color:#b93e44;
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+
+}
+.search-form{
+    padding:10px;
+    display:flex;
+    justify-content: center;
+}
+.search-btn{
+    background: #b93e44;
+    border:none;
+    padding: 9px 7px 7px;
+}
+
+/* Menu */
+.menu{
+    background-color: #b93e44;
+    font-family: 'Ranchers', cursive;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.menu ul{
+    display: none;
+    list-style: none;
+    padding: 10px;
+    margin:0;
+}
+.menu .visible{
+    display: block;
+}
+.menu-item{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding-top:8px;
+}
+
+.menu-btn{
+    background: none;
+    border: none;
+    padding: 6px 0 4px;
+}
+
+.max{
+    max-width:950px;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.menu .max{
+    padding: 0 0 0 10px;
+}
+
+/* Overskrifter */
+h1, h2, h3, h4{
+    font-family: 'Ranchers', cursive;
+    text-transform:uppercase;
+}
+
+.content {
+    margin-top:40px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
+
+.selected{
+    background-color: #fff2d8;
+}
+.selected .menu-item{
+    color:#b93e44
+}
+
+.c-form input, 
+.c-form textarea,
+.c-form button{
+    width:100%;
+    margin-bottom: 20px;
+    padding: 8px 0;
+}
+
+.c-form button{
+    background-color: #fff2d8;
+    color:#b93e44;
+    border: 2px solid #b93e44;
+}
+
+.c-form .color-input{
+    width:15px;
+}
+.center{
+    text-align: center;
+}
+
+@media screen and (min-width:800px) {
+    /* DESKTOP STYLING */
+    .menu ul{
+        display:flex;
+        justify-content: flex-end;
+        padding: 0;
+    }
+    .menu .visible{
+        display: flex;
+    }
+    .menu-btn{
+        display:none;
+    }
+    .menu .max{
+        padding: 0;
+    }
+    .menu li{
+        /* border-left:1px solid white; */
+        border-right:1px solid white;
+        padding: 5px;
+    }
+    .menu li:first-child{
+        border-left:1px solid white;
+    }
+    .menu-item{
+        padding:5px;
+    }
+
+    .flex-desktop{
+        display: flex;
+        gap:25px;
+        justify-content: space-between;
+    }
+    .main{
+        width:66.66666%
+    }
+    .sidebar{
+        width: 33.33%;
+    }
+
+}
